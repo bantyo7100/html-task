@@ -1,0 +1,26 @@
+.navbar {
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end; /* リンクを右端に配置 */
+}
+
+.navbar a {
+    color: red; /* ナビゲーションバーのテキスト色 */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd; /* ナビゲーションバーのホバー時の背景色 */
+    color: black;
+}
+
+.rogo_img{
+    font-size: 150%;
+    color: red  ;
+}
+
+.rogo_img img{
+    width: 5%;
+}
