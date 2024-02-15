@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="allstyle.css">
     <title>HOME</title>
 </head>
 <body>
     <div class="rogo_img">
-    <img src="img/360_F_371013119_o87usHtqx06jK5IQ3sywV3cMslyx34Hi.webp">VALORANT
+    <img src="img/360_F_371013119_o87usHtqx06jK5IQ3sywV3cMslyx34Hi.webp">
+    <a  href="index.html">VALORANT</a>
     </div>
     <nav class="annai">
     <div class="navbar">
@@ -17,4 +19,31 @@
     <a class="nav-link active" aria-current="page" href="./arsenal/arsenal.html">ARSENAL</a>
     </div>
     </nav>
+    <div class="slider-container">
+    <div class="slider-container">
+        <div class="slide">
+          <img src="img/ascent.png" alt="画像1">
+        </div>
+        <div class="slide">
+          <img src="img/haven.png" alt="画像2">
+        </div>
+        <div class="slide">
+          <img src="img/split.png" alt="画像3">
+        </div>
+      </div>
+      <script>
+      const slides = document.querySelectorAll('.slide');
+      let currentIndex = 0;
+      function switchSlide() {
+        slides[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex + 1) % slides.length;
+        slides[currentIndex].classList.add('active');
+    }
+    
+    setInterval(switchSlide, 3000);
+</script>
+    <button class="arrow prev" onclick="switchSlide(-1)">＜</button>
+    <button class="arrow next" onclick="switchSlide(1)">＞</button>
+  </div>
+
 </html>

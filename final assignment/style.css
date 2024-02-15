@@ -1,26 +1,21 @@
-.navbar {
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 600px;
     overflow: hidden;
-    display: flex;
-    justify-content: flex-end; /* リンクを右端に配置 */
-}
-
-.navbar a {
-    color: red; /* ナビゲーションバーのテキスト色 */
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.navbar a:hover {
-    background-color: #ddd; /* ナビゲーションバーのホバー時の背景色 */
-    color: black;
-}
-
-.rogo_img{
-    font-size: 150%;
-    color: red  ;
-}
-
-.rogo_img img{
-    width: 5%;
-}
+  }
+  .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .slide.active {
+    opacity: 1;
+  }
